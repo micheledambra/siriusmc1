@@ -13,7 +13,7 @@ struct ContentView: View {
             Image(systemName: "heart.fill")
                 .imageScale(.large)
                 .foregroundColor(.red)
-            Text("2")
+            Text("244422442244")
         }
         .padding()
     }
