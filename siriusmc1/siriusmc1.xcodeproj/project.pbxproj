@@ -70,6 +70,9 @@
 		C423E6332902AD2F00D31DC2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0A21D18B2902ABCB00AFCFFA /* GoalView.swift */,
+				C4F56FBF290155E6002981F3 /* ContentView.swift */,
+				C4F56FBD290155E6002981F3 /* siriusmc1App.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -103,9 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				C423E6332902AD2F00D31DC2 /* Views */,
-				C4F56FBD290155E6002981F3 /* siriusmc1App.swift */,
-				C4F56FBF290155E6002981F3 /* ContentView.swift */,
-				0A21D18B2902ABCB00AFCFFA /* GoalView.swift */,
 				C423E6342902AD4000D31DC2 /* Models */,
 				C4F56FC1290155E7002981F3 /* Assets.xcassets */,
 				C4F56FC3290155E7002981F3 /* Preview Content */,
