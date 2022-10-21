@@ -12,9 +12,6 @@
 		C4F56FC0290155E6002981F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F56FBF290155E6002981F3 /* ContentView.swift */; };
 		C4F56FC2290155E7002981F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4F56FC1290155E7002981F3 /* Assets.xcassets */; };
 		C4F56FC5290155E7002981F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4F56FC4290155E7002981F3 /* Preview Assets.xcassets */; };
-		C4F56FCF290155E7002981F3 /* siriusmc1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F56FCE290155E7002981F3 /* siriusmc1Tests.swift */; };
-		C4F56FD9290155E7002981F3 /* siriusmc1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F56FD8290155E7002981F3 /* siriusmc1UITests.swift */; };
-		C4F56FDB290155E7002981F3 /* siriusmc1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F56FDA290155E7002981F3 /* siriusmc1UITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,10 +39,7 @@
 		C4F56FC1290155E7002981F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4F56FC4290155E7002981F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C4F56FCA290155E7002981F3 /* siriusmc1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = siriusmc1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4F56FCE290155E7002981F3 /* siriusmc1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = siriusmc1Tests.swift; sourceTree = "<group>"; };
 		C4F56FD4290155E7002981F3 /* siriusmc1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = siriusmc1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4F56FD8290155E7002981F3 /* siriusmc1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = siriusmc1UITests.swift; sourceTree = "<group>"; };
-		C4F56FDA290155E7002981F3 /* siriusmc1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = siriusmc1UITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,12 +67,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C423E6332902AD2F00D31DC2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C423E6342902AD4000D31DC2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C4F56FB1290155E6002981F3 = {
 			isa = PBXGroup;
 			children = (
 				C4F56FBC290155E6002981F3 /* siriusmc1 */,
-				C4F56FCD290155E7002981F3 /* siriusmc1Tests */,
-				C4F56FD7290155E7002981F3 /* siriusmc1UITests */,
 				C4F56FBB290155E6002981F3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,9 +102,11 @@
 		C4F56FBC290155E6002981F3 /* siriusmc1 */ = {
 			isa = PBXGroup;
 			children = (
+				C423E6332902AD2F00D31DC2 /* Views */,
 				C4F56FBD290155E6002981F3 /* siriusmc1App.swift */,
 				C4F56FBF290155E6002981F3 /* ContentView.swift */,
 				0A21D18B2902ABCB00AFCFFA /* GoalView.swift */,
+				C423E6342902AD4000D31DC2 /* Models */,
 				C4F56FC1290155E7002981F3 /* Assets.xcassets */,
 				C4F56FC3290155E7002981F3 /* Preview Content */,
 			);
@@ -111,23 +119,6 @@
 				C4F56FC4290155E7002981F3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		C4F56FCD290155E7002981F3 /* siriusmc1Tests */ = {
-			isa = PBXGroup;
-			children = (
-				C4F56FCE290155E7002981F3 /* siriusmc1Tests.swift */,
-			);
-			path = siriusmc1Tests;
-			sourceTree = "<group>";
-		};
-		C4F56FD7290155E7002981F3 /* siriusmc1UITests */ = {
-			isa = PBXGroup;
-			children = (
-				C4F56FD8290155E7002981F3 /* siriusmc1UITests.swift */,
-				C4F56FDA290155E7002981F3 /* siriusmc1UITestsLaunchTests.swift */,
-			);
-			path = siriusmc1UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +261,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4F56FCF290155E7002981F3 /* siriusmc1Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4F56FD9290155E7002981F3 /* siriusmc1UITests.swift in Sources */,
-				C4F56FDB290155E7002981F3 /* siriusmc1UITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
