@@ -71,8 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				C4F56FBD290155E6002981F3 /* siriusmc1App.swift */,
-				0A21D18B2902ABCB00AFCFFA /* GoalView.swift */,
 				C4F56FBF290155E6002981F3 /* ContentView.swift */,
+				0A21D18B2902ABCB00AFCFFA /* GoalView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
