@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct GoalView: View {
     var body: some View {
         
@@ -45,16 +46,26 @@ struct GoalView: View {
                     Text("Goal description")
                     
                     Spacer()
-                        .frame(height:90)
+                        .frame(height:100)
                     
                     HStack {
-                        Button("Button") {
+                        Button{
                             /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                        } label: {
+                            Image(systemName: "pencil")
                         }
+                        .buttonStyle(GrowingButton())
                         
-                        Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
+                        Spacer()
+                            .frame(width: 90)
+                        
+                        Button{
                             /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                        } label: {
+                            Image(systemName: "chart.xyaxis.line")
                         }
+                        .buttonStyle(GrowingButton())
+                        
                     }
                 }
             }
