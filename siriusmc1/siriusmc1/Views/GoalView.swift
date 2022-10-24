@@ -13,6 +13,8 @@ struct GoalView: View {
         
         NavigationStack{
             
+            
+            
             TabView {
                     
                     ForEach(GoalList) { GoalCard in
@@ -21,9 +23,9 @@ struct GoalView: View {
                         ZStack(alignment: .top){
                             
                             RoundedRectangle(cornerRadius: 40)
-                                .foregroundColor(.teal)
+                                .foregroundColor(GoalCard.color)
                                 .frame(width: 330, height: 525)
-                                .shadow(radius: 30)
+                                .shadow(radius: 10)
                             //.padding()
                             
                             VStack(){
