@@ -1,15 +1,13 @@
 //
-//  ContentView.swift
+//  TabBar.swift
 //  siriusmc1
 //
-//  Created by Michele D'Ambra on 20/10/22.
+//  Created by Daniele Patrizio on 24/10/22.
 //
 
 import SwiftUI
 
-
-
-struct ContentView: View {
+struct TabBar: View {
     var body: some View {
         TabView{
             GoalView()
@@ -27,9 +25,11 @@ struct ContentView: View {
         }
     }
     
-    struct ContentView_Previews: PreviewProvider {
+    
+    
+    struct TabBar_Previews: PreviewProvider {
         static var previews: some View {
-            ContentView()
+            TabBar()
         }
     }
 }
