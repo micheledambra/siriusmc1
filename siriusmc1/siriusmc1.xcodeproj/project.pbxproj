@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		0A21D18C2902ABCB00AFCFFA /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A21D18B2902ABCB00AFCFFA /* GoalView.swift */; };
 		2A602DB42902B42C00D19D2F /* TasksInGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A602DB32902B42C00D19D2F /* TasksInGoal.swift */; };
-		3C72908C29067D3E008FD2AA /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C72908B29067D3E008FD2AA /* TabBar.swift */; };
+		5EB2E72929067B270068EA19 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB2E72829067B270068EA19 /* Task.swift */; };
+		C471917C2906856800F587E1 /* ButtonStyleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471917B2906856800F587E1 /* ButtonStyleModel.swift */; };
 		C4F56FBE290155E6002981F3 /* siriusmc1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F56FBD290155E6002981F3 /* siriusmc1App.swift */; };
 		C4F56FC0290155E6002981F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F56FBF290155E6002981F3 /* ContentView.swift */; };
 		C4F56FC2290155E7002981F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4F56FC1290155E7002981F3 /* Assets.xcassets */; };
@@ -36,7 +37,8 @@
 /* Begin PBXFileReference section */
 		0A21D18B2902ABCB00AFCFFA /* GoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalView.swift; sourceTree = "<group>"; };
 		2A602DB32902B42C00D19D2F /* TasksInGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksInGoal.swift; sourceTree = "<group>"; };
-		3C72908B29067D3E008FD2AA /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		5EB2E72829067B270068EA19 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		C471917B2906856800F587E1 /* ButtonStyleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleModel.swift; sourceTree = "<group>"; };
 		C4F56FBA290155E6002981F3 /* siriusmc1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = siriusmc1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F56FBD290155E6002981F3 /* siriusmc1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = siriusmc1App.swift; sourceTree = "<group>"; };
 		C4F56FBF290155E6002981F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,8 +87,17 @@
 		C423E6342902AD4000D31DC2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C471917A290680CE00F587E1 /* GoalViewModels */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C471917A290680CE00F587E1 /* GoalViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C471917B2906856800F587E1 /* ButtonStyleModel.swift */,
+			);
+			path = GoalViewModels;
 			sourceTree = "<group>";
 		};
 		C4F56FB1290155E6002981F3 = {
@@ -261,7 +272,7 @@
 				C4F56FC0290155E6002981F3 /* ContentView.swift in Sources */,
 				0A21D18C2902ABCB00AFCFFA /* GoalView.swift in Sources */,
 				C4F56FBE290155E6002981F3 /* siriusmc1App.swift in Sources */,
-				3C72908C29067D3E008FD2AA /* TabBar.swift in Sources */,
+				C471917C2906856800F587E1 /* ButtonStyleModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
