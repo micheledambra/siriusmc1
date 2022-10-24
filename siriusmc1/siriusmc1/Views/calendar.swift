@@ -19,7 +19,7 @@ struct calendar: View {
                     Text("30")
                         .hidden()
                         .padding(8)
-                        .background(1 != 1 ? Color.red : Color.blue)
+                        .background(1 != 1 ? Color.blue : Color.teal)
 //
                         .clipShape(Rectangle())
                         .cornerRadius(4)
