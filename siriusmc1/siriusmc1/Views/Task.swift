@@ -43,9 +43,10 @@ struct TaskView: View {
     }
 }
 
-struct Task_Previews:
+struct TaskView_Previews:
     PreviewProvider {
     static var previews: some View {
         TaskView()
     }
 }
+
