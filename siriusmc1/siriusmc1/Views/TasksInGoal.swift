@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct TasksInGoal: View {
+    @State var setModal: Bool = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+        ZStack{
+            Button("Set Tasks") {
+                setModal.toggle()
+            }
+            .sheet(isPresented: $setModal) {
+                SetTasksModal()
+            }
 
-struct TasksInGoal_Previews: PreviewProvider {
-    static var previews: some View {
-        TasksInGoal()
+        }
+    }
+    
+    struct TasksInGoal_Previews: PreviewProvider {
+        static var previews: some View {
+            TasksInGoal()
+        }
     }
 }
