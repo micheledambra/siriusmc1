@@ -17,5 +17,6 @@ struct GrowingButton: ButtonStyle {
             .clipShape(Circle())
             .scaleEffect(configuration.isPressed ? 1.5 : 1)
             .animation(.easeOut(duration: 0.2), value: configuration.isPressed)
+            .shadow(radius: 5)
     }
 }
