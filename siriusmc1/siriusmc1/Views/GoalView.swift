@@ -13,6 +13,8 @@ struct GoalView: View {
         
         NavigationStack{
             
+            
+            
             TabView {
                     
                     ForEach(GoalList) { GoalCard in
@@ -21,14 +23,14 @@ struct GoalView: View {
                         ZStack(alignment: .top){
                             
                             RoundedRectangle(cornerRadius: 40)
-                                .foregroundColor(.teal)
-                                .frame(width: 330, height: 560)
-                                .shadow(radius: 30)
+                                .foregroundColor(GoalCard.color)
+                                .frame(width: 330, height: 525)
+                                .shadow(radius: 10)
                             //.padding()
                             
                             VStack(){
                                 Spacer()
-                                    .frame(height:35)
+                                    .frame(height:30)
                                 
                                 Text(GoalCard.name)
                                     .font(.title)
@@ -36,7 +38,7 @@ struct GoalView: View {
                                     .foregroundColor(.blue)
                                 
                                 Spacer()
-                                    .frame(height:35)
+                                    .frame(height:30)
                                 
                                 Image("statplaceholder")
                                     .resizable()
@@ -50,7 +52,7 @@ struct GoalView: View {
                                 Text(GoalCard.description)
                                 
                                 Spacer()
-                                    .frame(height:100)
+                                    .frame(height:78)
                                 
                                 HStack {
                                     Button{

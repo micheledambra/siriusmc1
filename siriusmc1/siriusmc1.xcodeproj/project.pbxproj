@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0A21D18C2902ABCB00AFCFFA /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A21D18B2902ABCB00AFCFFA /* GoalView.swift */; };
+		0A2B8973290833CE0072C9D8 /* SetAGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B8972290833CE0072C9D8 /* SetAGoal.swift */; };
 		2A602DB42902B42C00D19D2F /* TasksInGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A602DB32902B42C00D19D2F /* TasksInGoal.swift */; };
 		3C72908E29068B25008FD2AA /* SetTasksModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C72908D29068B25008FD2AA /* SetTasksModal.swift */; };
 		5EB2E72F29069C8A0068EA19 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB2E72E29069C8A0068EA19 /* Task.swift */; };
+		5EB2E745290731680068EA19 /* calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB2E744290731680068EA19 /* calendar.swift */; };
 		C471917C2906856800F587E1 /* ButtonStyleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471917B2906856800F587E1 /* ButtonStyleModel.swift */; };
 		C471917E29068A3500F587E1 /* GoalCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471917D29068A3500F587E1 /* GoalCardModel.swift */; };
 		C4F56FBE290155E6002981F3 /* siriusmc1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F56FBD290155E6002981F3 /* siriusmc1App.swift */; };
@@ -38,9 +40,11 @@
 
 /* Begin PBXFileReference section */
 		0A21D18B2902ABCB00AFCFFA /* GoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalView.swift; sourceTree = "<group>"; };
+		0A2B8972290833CE0072C9D8 /* SetAGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetAGoal.swift; sourceTree = "<group>"; };
 		2A602DB32902B42C00D19D2F /* TasksInGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksInGoal.swift; sourceTree = "<group>"; };
 		3C72908D29068B25008FD2AA /* SetTasksModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTasksModal.swift; sourceTree = "<group>"; };
 		5EB2E72E29069C8A0068EA19 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		5EB2E744290731680068EA19 /* calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendar.swift; sourceTree = "<group>"; };
 		C471917B2906856800F587E1 /* ButtonStyleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleModel.swift; sourceTree = "<group>"; };
 		C471917D29068A3500F587E1 /* GoalCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCardModel.swift; sourceTree = "<group>"; };
 		C4F56FBA290155E6002981F3 /* siriusmc1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = siriusmc1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +89,8 @@
 				2A602DB32902B42C00D19D2F /* TasksInGoal.swift */,
 				3C72908D29068B25008FD2AA /* SetTasksModal.swift */,
 				5EB2E72E29069C8A0068EA19 /* Task.swift */,
+				5EB2E744290731680068EA19 /* calendar.swift */,
+				0A2B8972290833CE0072C9D8 /* SetAGoal.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -274,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EB2E745290731680068EA19 /* calendar.swift in Sources */,
 				C471917E29068A3500F587E1 /* GoalCardModel.swift in Sources */,
 				2A602DB42902B42C00D19D2F /* TasksInGoal.swift in Sources */,
 				3C72908E29068B25008FD2AA /* SetTasksModal.swift in Sources */,
@@ -282,6 +289,7 @@
 				C4F56FBE290155E6002981F3 /* siriusmc1App.swift in Sources */,
 				5EB2E72F29069C8A0068EA19 /* Task.swift in Sources */,
 				C471917C2906856800F587E1 /* ButtonStyleModel.swift in Sources */,
+				0A2B8973290833CE0072C9D8 /* SetAGoal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
