@@ -19,7 +19,7 @@ struct ContentView: View {
                     
                 }.tag(1)
             
-            TasksInGoal()
+            TaskView()
                 .tabItem{
                     Label("Tasks", systemImage: "list.bullet")
                     
