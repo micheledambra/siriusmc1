@@ -21,6 +21,8 @@ struct Tasks: Identifiable {
 
 
 struct TaskView: View {
+    @State var setModal: Bool = false
+
     
     var tasks: [Tasks] = [
         Tasks (name: "Task N°1"), Tasks (name: "Task N°2"), Tasks (name: "Task N°3")
@@ -31,7 +33,12 @@ struct TaskView: View {
             Image(systemName: "list.bullet.circle.fill")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Tasks")
+            Button("Tasks") {
+                setModal.toggle()
+            }
+            .sheet(isPresented: $setModal) {
+                SetTasksModal()
+            }
             
             List {
                 ForEach(tasks) {
