@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+import SwiftUI
+
 struct Item: Hashable {
    let name: String
    let color: UIColor
@@ -23,28 +25,34 @@ struct Tasks: Identifiable {
 struct TaskView: View {
     
     
+    
     var tasks: [Tasks] = [
         Tasks (name: "Task N°1"), Tasks (name: "Task N°2"), Tasks (name: "Task N°3")
     ]
     
     var body: some View {
-        
-        NavigationStack{
-            ZStack {
-                Text("furfiubr")
-                VStack{
-                    List {
-                        ForEach(tasks) {
-                            task in Text(task.name)
+        VStack{
+            calendar()
+                .frame(height: 450)
+            
+            NavigationStack{
+                ZStack {
+                    Text("furfiubr")
+                    VStack{
+                        List {
+                            ForEach(tasks) {
+                                task in Text(task.name)
+                            }
+                            
                         }
                     }
                 }
+                //.padding()
+                .navigationTitle("Tasks")
+                Spacer ()
             }
-            //.padding()
-            .navigationTitle("Tasks")
-            
         }
-            }
+    }
     
     struct TaskView_Previews:
         PreviewProvider {
