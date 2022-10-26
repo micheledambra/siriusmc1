@@ -86,11 +86,11 @@
 			children = (
 				C4F56FBF290155E6002981F3 /* ContentView.swift */,
 				0A21D18B2902ABCB00AFCFFA /* GoalView.swift */,
+				0A2B8972290833CE0072C9D8 /* SetAGoal.swift */,
 				2A602DB32902B42C00D19D2F /* TasksInGoal.swift */,
 				3C72908D29068B25008FD2AA /* SetTasksModal.swift */,
 				5EB2E72E29069C8A0068EA19 /* Task.swift */,
 				5EB2E744290731680068EA19 /* calendar.swift */,
-				0A2B8972290833CE0072C9D8 /* SetAGoal.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

@@ -54,6 +54,7 @@ struct SetAGoal: View {
                                 Text("Add")
                                     
                             }
+                            
                         }
                     })
                 
