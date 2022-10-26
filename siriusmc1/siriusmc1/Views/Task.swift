@@ -31,7 +31,7 @@ struct TaskView: View {
         
         NavigationStack{
             ZStack {
-                Text("furfiubr")
+                Text("")
                 VStack{
                     List {
                         ForEach(tasks) {
@@ -40,7 +40,6 @@ struct TaskView: View {
                     }
                 }
             }
-            //.padding()
             .navigationTitle("Tasks")
             
         }

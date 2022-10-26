@@ -16,26 +16,32 @@ struct SetAGoal: View {
             
             VStack{
                 Divider()
-                
-                
+
+               
                 
                 VStack{
-                    Text("Name")
-                        .padding([.leading, .bottom, .trailing], -181.0)
-                    TextField("Goal#1", text: $username).padding(.leading, 157)
-                    
+                    HStack {
+                        Text("Name")
+                            .foregroundColor(Color.black)
+                            .padding(.leading, 6.0)
+                        Spacer()
+                        TextField("Placeholder", text: $username)
+                            
+                    }
+                    .multilineTextAlignment(.trailing)
+                    .padding(10)
+                   
                     Divider()
                     
-                }
-                VStack{
                     DatePicker(selection: /*@START_MENU_TOKEN@*/.constant(Date())/*@END_MENU_TOKEN@*/, label: { Text("Period") }).padding()
                     
-                    Divider()
                     
+                    Divider()
+
                 }
                 Spacer()
                     .frame(height:490)
-                
+
                 
                 Text("")
                     .navigationTitle("Set a Goal")
@@ -45,8 +51,8 @@ struct SetAGoal: View {
                         ToolbarItem(placement: .navigationBarTrailing) {
                             Button(action: {
                             }) {
-                                Image(systemName: "plus")
-                                    .imageScale(.large)
+                                Text("Add")
+                                    
                             }
                         }
                     })
