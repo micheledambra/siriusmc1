@@ -23,12 +23,13 @@ struct SetTasksModal: View {
                     HStack {
                         Text("Name")
                             .foregroundColor(Color.black)
+                            .padding(.leading, 6.0)
                         Spacer()
                         TextField("Placeholder", text: $username)
                             
                     }
                     .multilineTextAlignment(.trailing)
-                    .padding(20)
+                    .padding(10)
                    
                     Divider()
                     
@@ -49,8 +50,7 @@ struct SetTasksModal: View {
                         ToolbarItem(placement: .navigationBarTrailing) {
                             Button(action: {
                             }) {
-                                Image(systemName: "plus")
-                                    .imageScale(.large)
+                                Text("Add")
                             }
                         }
                     })
