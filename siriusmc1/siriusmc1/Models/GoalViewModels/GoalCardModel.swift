@@ -21,18 +21,14 @@ struct GoalCard: Identifiable {
     //methods
 }
 
-/*struct Date: {
-    var day: Int
-    var month: Int
-    var year: Int
-}*/
+
 
 struct GoalTasks: Identifiable {
     var id: UUID = UUID()
     
     var name: String
     var description : String
-    //var Day: = Date
+    var day: Date
     
     
     //methods
@@ -40,7 +36,7 @@ struct GoalTasks: Identifiable {
 
 /*
 var Tasks1: [GoalTasks] = [
-    GoalTasks(name:" Task n 1", description: "Descrizione task 1", day: ),
+    GoalTasks(name:" Task n 1", description: "Descrizione task 1", day: 22-10-2022),
 
 ]*/
 
