@@ -82,6 +82,16 @@ struct GoalView: View {
                 
             
             .navigationTitle("Goals")
+            .toolbar(content: {
+                
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        //action
+                    }) {
+                        Text(Image(systemName: "plus"))
+                    }
+                }
+            })
         }
     }
 }
