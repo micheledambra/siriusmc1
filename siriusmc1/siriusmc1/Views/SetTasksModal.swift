@@ -20,18 +20,22 @@ struct SetTasksModal: View {
                
                 
                 VStack{
-                    Text("Name")
-                        .padding([.leading, .bottom, .trailing], -181.0)
-                    TextField("Placeholder", text: $username).padding(.leading, 157)
+                    HStack {
+                        Text("Name")
+                            .foregroundColor(Color.black)
+                        Spacer()
+                        TextField("Placeholder", text: $username)
+                            
+                    }
+                    .multilineTextAlignment(.trailing)
+                    .padding(20)
                    
                     Divider()
-
-                }
-                VStack{
+                    
                     DatePicker(selection: /*@START_MENU_TOKEN@*/.constant(Date())/*@END_MENU_TOKEN@*/, label: { Text("Period") }).padding()
                     
                     Divider()
-                    
+
                 }
                 Spacer()
                     .frame(height:490)

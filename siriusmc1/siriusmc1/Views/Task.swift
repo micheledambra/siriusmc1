@@ -21,39 +21,36 @@ struct Tasks: Identifiable {
 
 
 struct TaskView: View {
-    @State var setModal: Bool = false
-
+    
     
     var tasks: [Tasks] = [
         Tasks (name: "Task N°1"), Tasks (name: "Task N°2"), Tasks (name: "Task N°3")
-        ]
-        
+    ]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "list.bullet.circle.fill")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Button("Tasks") {
-                setModal.toggle()
-            }
-            .sheet(isPresented: $setModal) {
-                SetTasksModal()
-            }
-            
-            List {
-                ForEach(tasks) {
-                    task in Text(task.name)
+        
+        NavigationStack{
+            ZStack {
+                Text("furfiubr")
+                VStack{
+                    List {
+                        ForEach(tasks) {
+                            task in Text(task.name)
+                        }
+                    }
                 }
             }
+            //.padding()
+            .navigationTitle("Tasks")
+            
         }
-        .padding()
+            }
+    
+    struct TaskView_Previews:
+        PreviewProvider {
+        static var previews: some View {
+            TaskView()
+        }
     }
+    
 }
-
-struct TaskView_Previews:
-    PreviewProvider {
-    static var previews: some View {
-        TaskView()
-    }
-}
-
