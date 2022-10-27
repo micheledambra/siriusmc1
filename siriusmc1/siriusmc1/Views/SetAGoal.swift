@@ -59,7 +59,7 @@ struct SetAGoal: View {
                         .padding(.leading, 16.0)
                         .padding(.trailing, 16.0)
                         .ignoresSafeArea(.keyboard, edges: .bottom)
-                    
+                
                     
                 }
                 Spacer()

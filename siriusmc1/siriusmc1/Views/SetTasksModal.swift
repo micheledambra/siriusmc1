@@ -10,60 +10,62 @@ import Foundation
 
 struct SetTasksModal: View {
     @State var username: String = ""
+    @State private var date = Date()
     var body: some View {
         
         NavigationView {
-            
-            VStack{
-                Divider()
-
-               
+            GeometryReader { geometry in
+                
+                
                 
                 VStack{
-                    HStack {
-                        Text("Name")
-                            .foregroundColor(Color.black)
-                            .padding(.leading, 6.0)
-                        Spacer()
-                        TextField("Placeholder", text: $username)
+                    Divider()
+                    
+                    
+                    
+                    VStack{
+                        HStack {
+                            Text("Name")
+                                .foregroundColor(Color.black)
+                                .padding(.leading, 6.0)
+                            Spacer()
+                            TextField("Placeholder", text: $username)
                             
-                    }
-                    .multilineTextAlignment(.trailing)
-                    .padding(10)
-                   
-                    Divider()
-                    
-                    DatePicker(selection: /*@START_MENU_TOKEN@*/.constant(Date())/*@END_MENU_TOKEN@*/, label: { Text("Period") }).padding()
-                    
-                    Divider()
-
-                }
-                Spacer()
-                    .frame(height:490)
-
-                
-                Text("")
-                    .navigationTitle("Set a Task")
-                
-                    .toolbar(content: {
-                        
-                        ToolbarItem(placement: .navigationBarTrailing) {
-                            Button(action: {
-                            }) {
-                                Text("Add")
-                            }
                         }
-                    })
-                
-                
+                        .multilineTextAlignment(.trailing)
+                        .padding(10)
+                        
+                        Divider()
+                        
+                        DatePicker( "Pick a date", selection: $date, in: Date()..., displayedComponents: [.date]) .padding()
+                        
+                        Divider()
+                        
+                    }
+                    Spacer()
+                        .frame(height:490)
+                    
+                    
+                    Text("")
+                        .navigationTitle("Set a Task")
+                    
+                        .toolbar(content: {
+                            
+                            ToolbarItem(placement: .navigationBarTrailing) {
+                                Button(action: {
+                                }) {
+                                    Text("Add")
+                                }
+                            }
+                        })
+                    
+                    
+                }
             }
-        }
-    }
+        }}
     struct SetTasksModal_Previews: PreviewProvider {
         static var previews: some View {
             SetTasksModal()
         }
     }
-    
-    
 }
