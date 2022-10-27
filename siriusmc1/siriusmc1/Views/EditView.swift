@@ -36,7 +36,7 @@ struct EditView: View {
                             Spacer()
                                 .frame(height:30)
                             
-                            Text(GoalCard.name)
+                            Text(GoalCard.goalName)
                                 .font(.title)
                                 .fontWeight(.bold)
                                 .foregroundColor(.blue)

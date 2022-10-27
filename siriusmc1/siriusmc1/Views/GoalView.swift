@@ -38,7 +38,7 @@ struct GoalView: View {
                             Spacer()
                                 .frame(height:30)
                             
-                            Text(GoalCard.name)
+                            Text(GoalCard.goalName)
                                 .font(.title)
                                 .fontWeight(.bold)
                                 .foregroundColor(.blue)
@@ -61,7 +61,7 @@ struct GoalView: View {
                             });                                 Spacer()
                                 .frame(height:35)
                             
-                            Text(GoalCard.description)
+                            Text(GoalCard.goalDescription)
                             
                             Spacer()
                                 .frame(height:78)
