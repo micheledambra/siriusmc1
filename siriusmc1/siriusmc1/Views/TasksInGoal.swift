@@ -11,7 +11,7 @@ struct TasksInGoal: View {
     @State var showModal: Bool = false
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 Divider()
                 Spacer()
@@ -79,6 +79,7 @@ struct TasksInGoal: View {
             }
              
             .navigationTitle("Goal №1")
+            .navigationBarTitleDisplayMode(.inline)
            
             .toolbar(content: {
                 

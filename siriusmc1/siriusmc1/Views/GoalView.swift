@@ -49,15 +49,15 @@ struct GoalView: View {
                                 // Do something...
                                 goal1.toggle()
                             }, label: {
-                                
+                                NavigationLink(destination: TasksInGoal(), isActive: $goal1) {
+                                                   
+                                }
                                 Image("statplaceholder")
                                     .resizable()
                                     .frame(width: 200, height:200)
                                     .mask(Circle())
                                     .shadow(radius: 20)
-                                    .sheet(isPresented: $goal1) {
-                                        TasksInGoal()
-                                    }
+                                
                             });                                 Spacer()
                                 .frame(height:35)
                             
