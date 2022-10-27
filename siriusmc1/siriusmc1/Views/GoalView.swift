@@ -29,8 +29,9 @@ struct GoalView: View {
                         
                         RoundedRectangle(cornerRadius: 40)
                             .foregroundColor(GoalCard.color)
-                            .frame(width: 330, height: 525)
-                            .shadow(radius: 10)
+                            .frame(width: 330, height: 540)
+                            .shadow(color: .gray, radius: 10, x:8, y:8)
+                            
                         
                         //.padding()
                         
@@ -50,11 +51,11 @@ struct GoalView: View {
                                 goal1.toggle()
                             }, label: {
                                 NavigationLink(destination: TasksInGoal(), isActive: $goal1) {
-                                                   
+                                    
                                 }
                                 Image("statplaceholder")
                                     .resizable()
-                                    .frame(width: 200, height:200)
+                                    .frame(width: 245, height:245)
                                     .mask(Circle())
                                     .shadow(radius: 20)
                                 
@@ -62,13 +63,16 @@ struct GoalView: View {
                                 .frame(height:35)
                             
                             Text(GoalCard.goalDescription)
+                                .frame(width: 300, height: 110, alignment: .top)
+                                //.background(Color.gray)
+                                
                             
                             Spacer()
                                 .frame(height:78)
                             
-                            HStack {
+                         /*   HStack {
                                 Button{
-                                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                                    
                                 } label: {
                                     Image(systemName: "pencil")
                                 }
@@ -78,19 +82,20 @@ struct GoalView: View {
                                     .frame(width: 90)
                                 
                                 Button{
-                                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                                    
                                 } label: {
                                     Image(systemName: "chart.xyaxis.line")
                                 }
                                 .buttonStyle(GrowingButton())
                                 
-                            }
+                            } */
                         }
                     }
                 }
             }
             .tabViewStyle(.page)
             .indexViewStyle(.page(backgroundDisplayMode: .always))
+            
             
             
             .navigationTitle("Goals")

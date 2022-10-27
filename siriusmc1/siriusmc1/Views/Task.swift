@@ -41,7 +41,7 @@ struct TaskView: View {
                 
                 ZStack {
                     
-                    Text("furfiubr")
+                    
                     VStack{
                         
                         List {

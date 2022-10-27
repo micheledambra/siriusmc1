@@ -9,9 +9,10 @@ import SwiftUI
 
 
 struct SetAGoal: View {
-    @State var username: String = ""
-    @State private var date = Date()
-    @State private var dateTwo = Date()
+    @State var goalName: String = ""
+    @State var goalDescription: String = ""
+    @State private var startDate = Date()
+    @State private var endDate = Date()
 
     var body: some View {
         
@@ -29,7 +30,7 @@ struct SetAGoal: View {
                             .foregroundColor(Color.black)
                             .padding(.leading, 6.0)
                         Spacer()
-                        TextField("Placeholder", text: $username)
+                        TextField("Placeholder", text: $goalName)
                         
                     }
                     .multilineTextAlignment(.trailing)
@@ -41,7 +42,7 @@ struct SetAGoal: View {
                             .foregroundColor(Color.black)
                             .padding(.leading, 6.0)
                         Spacer()
-                        TextField("Placeholder", text: $username)
+                        TextField("Placeholder", text: $goalDescription)
                         
                     }
                     .multilineTextAlignment(.trailing)
@@ -49,13 +50,13 @@ struct SetAGoal: View {
                     .padding(.trailing, 16.0)
                     Divider()
                     
-                    DatePicker( "Start", selection: $date, in: Date()..., displayedComponents: [.date])
+                    DatePicker( "Start", selection: $startDate, in: Date()..., displayedComponents: [.date])
                         .multilineTextAlignment(.trailing)
                         .padding(.leading, 16.0)
                         .padding(.trailing, 16.0)
                     
                     Divider()
-                    DatePicker( "End", selection: $dateTwo, in: Date()..., displayedComponents: [.date])
+                    DatePicker( "End", selection: $endDate, in: Date()..., displayedComponents: [.date])
                         .padding(.leading, 16.0)
                         .padding(.trailing, 16.0)
                         .ignoresSafeArea(.keyboard, edges: .bottom)
@@ -87,6 +88,11 @@ struct SetAGoal: View {
     }
     }
     
+   /* GoalCard.goalName =
+    GoalCard.goalDescription =
+    GoalCard.startDate =
+    GoalCard.endDate =
+    */
     struct SetAGoal_Previews: PreviewProvider {
         static var previews: some View {
             SetAGoal()
