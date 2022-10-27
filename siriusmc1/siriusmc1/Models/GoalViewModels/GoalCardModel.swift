@@ -21,6 +21,26 @@ struct GoalCard: Identifiable {
     //methods
 }
 
+
+
+struct GoalTasks: Identifiable {
+    var id: UUID = UUID()
+    
+    var name: String
+    var description : String
+    var day: Date
+    
+    
+    //methods
+}
+
+/*
+var Tasks1: [GoalTasks] = [
+    GoalTasks(name:" Task n 1", description: "Descrizione task 1", day: 22-10-2022),
+
+]*/
+
+
 var GoalList: [GoalCard] = [
     GoalCard(name: "Goal #1", description: "Goal Description 1", numberOfTasks: 5, numberOfTasksDone: 4, color: .teal),
     GoalCard(name: "Goal #2", description: "Goal Description 2", numberOfTasks: 8, numberOfTasksDone: 6, color: .gray),
