@@ -19,6 +19,7 @@ struct GoalCard: Identifiable{
     var numberOfTasksDone: Int
     var startDate: String //Date
     var endDate: String //Date
+    var ref: String
     var color: Color
 }
 
@@ -37,9 +38,9 @@ struct GoalCard: Identifiable{
 
 
     var GoalList: [GoalCard] = [
-        GoalCard(empty: false, goalName: "Goal #1", goalDescription: "Goal #1 Description", numberOfTasks: 7, numberOfTasksDone: 6, startDate: "10/11/2022", endDate: "10/12/22", color: .teal),
-        GoalCard(empty: false, goalName: "Goal #2", goalDescription: "Goal #2 Description", numberOfTasks: 10, numberOfTasksDone: 7, startDate: "10/12/2022", endDate: "10/01/23", color: .gray),
-        GoalCard(empty: false, goalName: "Goal #3", goalDescription: "Goal #3 Description", numberOfTasks: 8, numberOfTasksDone: 5, startDate: "10/12/2022", endDate: "10/01/23", color: .green)
+        GoalCard(empty: false, goalName: "Goal #1", goalDescription: "Goal #1 Description", numberOfTasks: 7, numberOfTasksDone: 6, startDate: "10/11/2022", endDate: "10/12/22", ref: "TaskListG1" ,color: .teal),
+        GoalCard(empty: false, goalName: "Goal #2", goalDescription: "Goal #2 Description", numberOfTasks: 10, numberOfTasksDone: 7, startDate: "10/12/2022", endDate: "10/01/23", ref: "TaskListG2" , color: .gray),
+        GoalCard(empty: false, goalName: "Goal #3", goalDescription: "Goal #3 Description", numberOfTasks: 8, numberOfTasksDone: 5, startDate: "10/12/2022", endDate: "10/01/23", ref: "TaskListG3", color: .green)
 
     ]
 
