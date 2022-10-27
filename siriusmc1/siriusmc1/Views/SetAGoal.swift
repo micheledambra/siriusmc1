@@ -34,10 +34,8 @@ struct SetAGoal: View {
                     Divider()
                     
                     DatePicker(selection: /*@START_MENU_TOKEN@*/.constant(Date())/*@END_MENU_TOKEN@*/, label: { Text("Period") }).padding()
-                    
-                    
                     Divider()
-
+                    
                 }
                 Spacer()
                     .frame(height:490)
