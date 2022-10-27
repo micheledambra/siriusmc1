@@ -10,14 +10,18 @@ import SwiftUI
 
 struct SetAGoal: View {
     @State var username: String = ""
+    @State private var date = Date()
+    @State private var dateTwo = Date()
+
     var body: some View {
         
         NavigationView {
-            
+            GeometryReader { geometry in
+                
             VStack{
                 Divider()
-
-               
+                
+                
                 
                 VStack{
                     HStack {
@@ -26,22 +30,41 @@ struct SetAGoal: View {
                             .padding(.leading, 6.0)
                         Spacer()
                         TextField("Placeholder", text: $username)
-                            
+                        
                     }
                     .multilineTextAlignment(.trailing)
-                    .padding(10)
-                   
+                    .padding(.leading, 10.0)
+                    .padding(.trailing, 16.0)
+                    Divider()
+                    HStack {
+                        Text("Description")
+                            .foregroundColor(Color.black)
+                            .padding(.leading, 6.0)
+                        Spacer()
+                        TextField("Placeholder", text: $username)
+                        
+                    }
+                    .multilineTextAlignment(.trailing)
+                    .padding(.leading, 10.0)
+                    .padding(.trailing, 16.0)
                     Divider()
                     
-                    DatePicker(selection: /*@START_MENU_TOKEN@*/.constant(Date())/*@END_MENU_TOKEN@*/, label: { Text("Period") }).padding()
-                    
+                    DatePicker( "Start", selection: $date, in: Date()..., displayedComponents: [.date])
+                        .multilineTextAlignment(.trailing)
+                        .padding(.leading, 16.0)
+                        .padding(.trailing, 16.0)
                     
                     Divider()
-
+                    DatePicker( "End", selection: $dateTwo, in: Date()..., displayedComponents: [.date])
+                        .padding(.leading, 16.0)
+                        .padding(.trailing, 16.0)
+                        .ignoresSafeArea(.keyboard, edges: .bottom)
+                    
+                    
                 }
                 Spacer()
                     .frame(height:490)
-
+                
                 
                 Text("")
                     .navigationTitle("Set a Goal")
@@ -52,7 +75,7 @@ struct SetAGoal: View {
                             Button(action: {
                             }) {
                                 Text("Add")
-                                    
+                                
                             }
                             
                         }
@@ -61,6 +84,7 @@ struct SetAGoal: View {
                 
             }
         }
+    }
     }
     
     struct SetAGoal_Previews: PreviewProvider {
