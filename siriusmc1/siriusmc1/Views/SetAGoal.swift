@@ -59,9 +59,7 @@ struct SetAGoal: View {
                         .padding(.leading, 16.0)
                         .padding(.trailing, 16.0)
                         .ignoresSafeArea(.keyboard, edges: .bottom)
-                    
-                    DatePicker(selection: /*@START_MENU_TOKEN@*/.constant(Date())/*@END_MENU_TOKEN@*/, label: { Text("Period") }).padding()
-                    Divider()
+                
                     
                 }
                 Spacer()
