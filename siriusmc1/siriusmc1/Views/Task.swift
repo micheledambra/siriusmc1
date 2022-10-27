@@ -24,36 +24,50 @@ struct Tasks: Identifiable {
 
 struct TaskView: View {
     
-    
+    @State private var calendar = Date()
     
     var tasks: [Tasks] = [
         Tasks (name: "Task N°1"), Tasks (name: "Task N°2"), Tasks (name: "Task N°3")
     ]
     
     var body: some View {
+        
         VStack{
-            calendar()
-                .frame(height: 450)
+            
+          
             
             NavigationStack{
+                
+                
                 ZStack {
+                    
                     Text("furfiubr")
                     VStack{
+                        
                         List {
+                            DatePicker("Start Date", selection: $calendar, displayedComponents: [.date]).datePickerStyle(.graphical)
+                            
                             ForEach(tasks) {
                                 task in Text(task.name)
                             }
                             
+                            
                         }
+                        
                     }
                 }
+                
                 //.padding()
                 .navigationTitle("Tasks")
+                
                 Spacer ()
             }
+            
             .navigationTitle("Tasks")
             
+            
         }
+        
     }
     
     struct TaskView_Previews:
