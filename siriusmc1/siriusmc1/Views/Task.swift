@@ -63,7 +63,6 @@ struct TaskView: View {
                 Spacer ()
             }
             
-            .navigationTitle("Tasks")
             
             
         }

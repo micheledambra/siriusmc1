@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct TasksInGoal: View {
+    
+    
+    
     @State var showModal: Bool = false
 
     var body: some View {
