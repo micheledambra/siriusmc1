@@ -59,7 +59,8 @@ struct GoalView: View {
                                     .mask(Circle())
                                     .shadow(radius: 20)
                                 
-                            });                                 Spacer()
+                            });
+                            Spacer()
                                 .frame(height:35)
                             
                             Text(GoalCard.goalDescription)
