@@ -10,7 +10,7 @@ import SwiftUI
 struct TasksInGoal2: View {
     @State var showModal: Bool = false
     
-    var goal: String = "bbbb"
+    var goal: String = "Tasks"
     
     var body: some View {
         
