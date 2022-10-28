@@ -60,7 +60,7 @@ struct GoalView2: View {
                 
                 ZStack(alignment: .top) {
                     
-                    NavigationLink(destination: TasksInGoal()) {
+                    NavigationLink(destination: TasksInGoal2()) {
                         
                         
                         RoundedRectangle(cornerRadius: 40)
@@ -97,7 +97,7 @@ struct GoalView2: View {
                 
                 ZStack(alignment: .top) {
                     
-                    NavigationLink(destination: TasksInGoal()) {
+                    NavigationLink(destination: TasksInGoal2()) {
                         
                         
                         RoundedRectangle(cornerRadius: 40)

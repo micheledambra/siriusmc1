@@ -10,7 +10,6 @@
 		0A21D18C2902ABCB00AFCFFA /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A21D18B2902ABCB00AFCFFA /* GoalView.swift */; };
 		0A2B8973290833CE0072C9D8 /* SetAGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B8972290833CE0072C9D8 /* SetAGoal.swift */; };
 		0AF879D4290A6A2A00F5E7B0 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF879D3290A6A2A00F5E7B0 /* EditView.swift */; };
-		2A602DB42902B42C00D19D2F /* TasksInGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A602DB32902B42C00D19D2F /* TasksInGoal.swift */; };
 		3C72908E29068B25008FD2AA /* SetTasksModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C72908D29068B25008FD2AA /* SetTasksModal.swift */; };
 		5EB2E72F29069C8A0068EA19 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB2E72E29069C8A0068EA19 /* Task.swift */; };
 		C40C4B60290BC5790019AB01 /* GoalView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40C4B5F290BC5790019AB01 /* GoalView2.swift */; };
@@ -44,7 +43,6 @@
 		0A21D18B2902ABCB00AFCFFA /* GoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalView.swift; sourceTree = "<group>"; };
 		0A2B8972290833CE0072C9D8 /* SetAGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetAGoal.swift; sourceTree = "<group>"; };
 		0AF879D3290A6A2A00F5E7B0 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
-		2A602DB32902B42C00D19D2F /* TasksInGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksInGoal.swift; sourceTree = "<group>"; };
 		3C72908D29068B25008FD2AA /* SetTasksModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTasksModal.swift; sourceTree = "<group>"; };
 		5EB2E72E29069C8A0068EA19 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		C40C4B5F290BC5790019AB01 /* GoalView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalView2.swift; sourceTree = "<group>"; };
@@ -92,7 +90,6 @@
 				0A21D18B2902ABCB00AFCFFA /* GoalView.swift */,
 				C40C4B5F290BC5790019AB01 /* GoalView2.swift */,
 				0A2B8972290833CE0072C9D8 /* SetAGoal.swift */,
-				2A602DB32902B42C00D19D2F /* TasksInGoal.swift */,
 				C40C4B61290BD9680019AB01 /* TasksInGoal2.swift */,
 				3C72908D29068B25008FD2AA /* SetTasksModal.swift */,
 				5EB2E72E29069C8A0068EA19 /* Task.swift */,
@@ -289,7 +286,6 @@
 				C471917E29068A3500F587E1 /* GoalCardModel.swift in Sources */,
 				C40C4B60290BC5790019AB01 /* GoalView2.swift in Sources */,
 				0AF879D4290A6A2A00F5E7B0 /* EditView.swift in Sources */,
-				2A602DB42902B42C00D19D2F /* TasksInGoal.swift in Sources */,
 				3C72908E29068B25008FD2AA /* SetTasksModal.swift in Sources */,
 				C4F56FC0290155E6002981F3 /* ContentView.swift in Sources */,
 				0A21D18C2902ABCB00AFCFFA /* GoalView.swift in Sources */,

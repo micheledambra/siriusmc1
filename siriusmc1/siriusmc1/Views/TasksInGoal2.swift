@@ -8,22 +8,42 @@
 import SwiftUI
 
 struct TasksInGoal2: View {
+    @State var showModal: Bool = false
+    
+    var goal: String = "bbbb"
+    
     var body: some View {
         
         
-        
-        List{
-            ForEach(TaskListG1) { TaskListG1 in
-                
-                HStack{
+        NavigationStack{
+            List{
+                ForEach(TaskListG1) { TaskListG1 in
                     
-                    Text(TaskListG1.taskName)
-                        .fontWeight(.bold)
-                    
+                    HStack{
+                        
+                        Text(TaskListG1.taskName)
+                            .fontWeight(.bold)
+                        
+                    }
                 }
             }
+            .navigationTitle(goal)
+            .toolbar(content: {
+                
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Add") {
+                        showModal.toggle()
+                    }
+                    .sheet(isPresented: $showModal) {
+                        SetTasksModal()
+                    }                }
+            })
+            
+            
         }
+        
     }
+    
     
     struct TasksInGoal2_Previews: PreviewProvider {
         static var previews: some View {

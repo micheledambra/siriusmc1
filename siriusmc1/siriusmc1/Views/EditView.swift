@@ -54,7 +54,7 @@ struct EditView: View {
                                     .mask(Circle())
                                     .shadow(radius: 20)
                                     .sheet(isPresented: $goal1) {
-                                        TasksInGoal()
+                                        TasksInGoal2()
                                     }
                             });                                 Spacer()
                                 .frame(height:35)

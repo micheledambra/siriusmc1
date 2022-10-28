@@ -47,7 +47,7 @@ struct GoalView: View {
 
                             
                             NavigationLink {
-                                TasksInGoal()
+                                TasksInGoal2()
                             } label: {
                                 Image("statplaceholder")
                                     .resizable()
