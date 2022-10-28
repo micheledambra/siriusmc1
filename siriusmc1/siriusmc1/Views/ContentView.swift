@@ -12,7 +12,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView{
-            GoalView()
+            GoalView2()
                 .tabItem{
                     Label("Goals", systemImage: "chart.bar.doc.horizontal")
                     

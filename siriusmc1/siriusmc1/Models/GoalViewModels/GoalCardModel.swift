@@ -24,7 +24,7 @@ struct GoalCard: Identifiable{
 }
 
 
- struct GoalTasks{
+struct GoalTasks: Identifiable{
      var id: UUID = UUID()
      
      var empty: Bool
