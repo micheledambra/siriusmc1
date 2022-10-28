@@ -83,17 +83,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C40C4B63290C97070019AB01 /* Archived */ = {
+			isa = PBXGroup;
+			children = (
+				0AF879D3290A6A2A00F5E7B0 /* EditView.swift */,
+				C471917B2906856800F587E1 /* ButtonStyleModel.swift */,
+				0A21D18B2902ABCB00AFCFFA /* GoalView.swift */,
+			);
+			path = Archived;
+			sourceTree = "<group>";
+		};
 		C423E6332902AD2F00D31DC2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				C4F56FBF290155E6002981F3 /* ContentView.swift */,
-				0A21D18B2902ABCB00AFCFFA /* GoalView.swift */,
 				C40C4B5F290BC5790019AB01 /* GoalView2.swift */,
 				0A2B8972290833CE0072C9D8 /* SetAGoal.swift */,
 				C40C4B61290BD9680019AB01 /* TasksInGoal2.swift */,
 				3C72908D29068B25008FD2AA /* SetTasksModal.swift */,
 				5EB2E72E29069C8A0068EA19 /* Task.swift */,
-				0AF879D3290A6A2A00F5E7B0 /* EditView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -102,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				C471917A290680CE00F587E1 /* GoalViewModels */,
+				C40C4B63290C97070019AB01 /* Archived */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -110,7 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				C471917D29068A3500F587E1 /* GoalCardModel.swift */,
-				C471917B2906856800F587E1 /* ButtonStyleModel.swift */,
 			);
 			path = GoalViewModels;
 			sourceTree = "<group>";

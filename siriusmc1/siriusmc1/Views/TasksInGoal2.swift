@@ -10,18 +10,20 @@ import SwiftUI
 struct TasksInGoal2: View {
     @State var showModal: Bool = false
     
-    var goal: String = "Tasks"
+    var goal: String = ""
+   
+    
     
     var body: some View {
         
         
         NavigationStack{
             List{
-                ForEach(TaskListG1) { TaskListG1 in
+                ForEach(TaskListG2) { listvar in
                     
                     HStack{
                         
-                        Text(TaskListG1.taskName)
+                        Text(listvar.taskName)
                             .fontWeight(.bold)
                         
                     }

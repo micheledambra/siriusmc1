@@ -60,3 +60,19 @@ var TaskListG1: [GoalTasks] = [
     
     
 ]
+
+var TaskListG2: [GoalTasks] = [
+
+    GoalTasks(empty: false, taskName: "Task 1 G 2", day: "11/11/22"),
+    GoalTasks(empty: false, taskName: "Task 2 G 2", day: "12/11/22"),
+    GoalTasks(empty: false, taskName: "Task 3 G 2", day: "13/11/22"),
+    GoalTasks(empty: false, taskName: "Task 4 G 2", day: "14/11/22"),
+    GoalTasks(empty: false, taskName: "Task 5 G 2", day: "15/11/22"),
+    GoalTasks(empty: false, taskName: "Task 6 G 2", day: "16/11/22"),
+    GoalTasks(empty: false, taskName: "Task 7 G 2", day: "17/11/22"),
+    GoalTasks(empty: false, taskName: "Task 8 G 2", day: "18/11/22"),
+    GoalTasks(empty: false, taskName: "Task 9 G 2", day: "19/11/22"),
+    GoalTasks(empty: false, taskName: "Task 10 G 2", day: "20/11/22")
+    
+    
+]

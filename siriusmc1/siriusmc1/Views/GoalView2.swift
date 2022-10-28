@@ -23,7 +23,7 @@ struct GoalView2: View {
                 
                 ZStack(alignment: .top) {
                     
-                    NavigationLink(destination: TasksInGoal2()) {
+                    NavigationLink(destination: TasksInGoal2(goal: GoalList[0].goalName)) {
                         
                         
                         RoundedRectangle(cornerRadius: 40)
@@ -36,7 +36,7 @@ struct GoalView2: View {
                             
                             Spacer()
                                 .frame(height: 30)
-                            Text("Goal #1")
+                            Text(GoalList[0].goalName)
                                 .font(.title)
                                 .fontWeight(.bold)
                                 .foregroundColor(.blue)
@@ -44,7 +44,7 @@ struct GoalView2: View {
                             Spacer()
                                 .frame(height: 25)
                             
-                            Text("Goal Description #1")
+                            Text(GoalList[0].goalDescription)
                                 .frame(width: 300, height: 85, alignment: .top)
                                 .position(x:0, y:20)
                             
@@ -60,7 +60,7 @@ struct GoalView2: View {
                 
                 ZStack(alignment: .top) {
                     
-                    NavigationLink(destination: TasksInGoal2()) {
+                    NavigationLink(destination: TasksInGoal2(goal: "text")) {
                         
                         
                         RoundedRectangle(cornerRadius: 40)
@@ -73,7 +73,7 @@ struct GoalView2: View {
                             
                             Spacer()
                                 .frame(height: 30)
-                            Text("Goal #1")
+                            Text(GoalList[1].goalName)
                                 .font(.title)
                                 .fontWeight(.bold)
                                 .foregroundColor(.blue)
@@ -81,7 +81,7 @@ struct GoalView2: View {
                             Spacer()
                                 .frame(height: 25)
                             
-                            Text("Goal Description #1")
+                            Text(GoalList[1].goalDescription)
                                 .frame(width: 300, height: 85, alignment: .top)
                                 .position(x:0, y:20)
                             
@@ -97,7 +97,7 @@ struct GoalView2: View {
                 
                 ZStack(alignment: .top) {
                     
-                    NavigationLink(destination: TasksInGoal2()) {
+                    NavigationLink(destination: TasksInGoal2(goal: "bla")) {
                         
                         
                         RoundedRectangle(cornerRadius: 40)
@@ -110,7 +110,7 @@ struct GoalView2: View {
                             
                             Spacer()
                                 .frame(height: 30)
-                            Text("Goal #1")
+                            Text(GoalList[2].goalName)
                                 .font(.title)
                                 .fontWeight(.bold)
                                 .foregroundColor(.blue)
@@ -118,7 +118,7 @@ struct GoalView2: View {
                             Spacer()
                                 .frame(height: 25)
                             
-                            Text("Goal Description #1")
+                            Text(GoalList[2].goalDescription)
                                 .frame(width: 300, height: 85, alignment: .top)
                                 .position(x:0, y:20)
                             
