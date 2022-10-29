@@ -11,6 +11,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        
         TabView{
             GoalView2()
                 .tabItem{
@@ -24,6 +25,7 @@ struct ContentView: View {
                     Label("Tasks", systemImage: "list.bullet")
                     
                 }.tag(2)
+            
         }
     }
     

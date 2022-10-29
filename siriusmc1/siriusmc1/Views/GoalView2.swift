@@ -14,9 +14,38 @@ struct GoalView2: View {
     var cardHeight: CGFloat = 170
     var cardWidth: CGFloat = 345
     
+    
+    
     var body: some View {
         
         NavigationStack{
+            
+            VStack {
+                
+                Text("Goals")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.trailing)
+                    .padding(.trailing, 250.0)
+                    .frame(height:0)
+              
+                    .toolbar(content: {
+                        
+                        
+                            Button("Add") {
+                                goalV.toggle()
+                                
+                            }
+                            .padding(.top, 35.0)
+                            .sheet(isPresented: $goalV) {
+                                SetAGoal()
+                            }
+                    })
+                
+            }
+
+
+            Spacer()
             
             VStack{
                 
@@ -24,7 +53,7 @@ struct GoalView2: View {
                     ZStack(alignment: .top) {
                         
                         RoundedRectangle(cornerRadius: 40)
-                            .foregroundColor(.teal)
+                            .foregroundColor(.yellow)
                             .frame(width: cardWidth, height: cardHeight)
                             .shadow(color: .gray, radius: 10, x:8, y:8)
                         
@@ -63,7 +92,7 @@ struct GoalView2: View {
                     ZStack(alignment: .top) {
                         
                         RoundedRectangle(cornerRadius: 40)
-                            .foregroundColor(.teal)
+                            .foregroundColor(.orange)
                             .frame(width: cardWidth, height: cardHeight)
                             .shadow(color: .gray, radius: 10, x:8, y:8)
                         
@@ -102,7 +131,7 @@ struct GoalView2: View {
                     ZStack(alignment: .top) {
                         
                         RoundedRectangle(cornerRadius: 40)
-                            .foregroundColor(.teal)
+                            .foregroundColor(.green)
                             .frame(width: cardWidth, height: cardHeight)
                             .shadow(color: .gray, radius: 10, x:8, y:8)
                         
@@ -130,9 +159,10 @@ struct GoalView2: View {
                                 .frame(width: cardWidth, height: cardHeight)
                         }
                         
-                        
-                    }//zstack1
-                }//endif
+                    }
+                    //zstack1
+                }
+                //endif
                 
                 
             }
@@ -141,19 +171,12 @@ struct GoalView2: View {
             
             
             //title
-                .navigationTitle("Goals")
-                .toolbar(content: {
-                    
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Button("Add") {
-                            goalV.toggle()
-                        }
-                        .sheet(isPresented: $goalV) {
-                            SetAGoal()
-                        }                }
-                })
+                
+                
         }
+        
     }
+    
 }
 
 struct GoalView2_Previews: PreviewProvider {
