@@ -38,6 +38,7 @@ struct TasksInGoal2: View {
                     }
                     .sheet(isPresented: $showModal) {
                         SetTasksModal()
+                            .presentationDetents([.medium, .large])
                     }                }
             })
             
