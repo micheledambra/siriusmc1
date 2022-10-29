@@ -36,7 +36,7 @@ struct GoalView2: View {
                                 goalV.toggle()
                                 
                             }
-                            .padding(.top, 35.0)
+                            .padding(.top, 33.0)
                             .sheet(isPresented: $goalV) {
                                 SetAGoal()
                             }
