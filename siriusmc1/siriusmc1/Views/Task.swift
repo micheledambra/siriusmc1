@@ -25,6 +25,8 @@ struct Tasks: Identifiable {
 struct TaskView: View {
     
     @State private var calendar = Date()
+
+    
     
     var tasks: [Tasks] = [
         Tasks (name: "Task N°1"), Tasks (name: "Task N°2"), Tasks (name: "Task N°3")
@@ -45,14 +47,18 @@ struct TaskView: View {
                     VStack{
                         
                         List {
+                            
                             DatePicker("Start Date", selection: $calendar, displayedComponents: [.date]).datePickerStyle(.graphical)
                             
                             ForEach(tasks) {
-                                task in Text(task.name)
+                                task in Text(task.name) 
+                                
+                                
                             }
                             
                             
-                        }
+                        }       
+
                         
                     }
                 }

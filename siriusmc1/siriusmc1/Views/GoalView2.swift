@@ -36,7 +36,7 @@ struct GoalView2: View {
                                 goalV.toggle()
                                 
                             }
-                            .padding(.top, 33.0)
+                            .padding(.top, 30.0)
                             .sheet(isPresented: $goalV) {
                                 SetAGoal()
                                     .presentationDetents([.medium, .large])

@@ -29,7 +29,7 @@ struct SetTasksModal: View {
                                 .foregroundColor(Color.black)
                                 .padding(.leading, 6.0)
                             Spacer()
-                            TextField("Placeholder", text: $username)
+                            TextField("Insert Task's Name", text: $username)
                             
                         }
                         .multilineTextAlignment(.trailing)

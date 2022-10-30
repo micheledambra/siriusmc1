@@ -30,7 +30,7 @@ struct SetAGoal: View {
                             .foregroundColor(Color.black)
                             .padding(.leading, 6.0)
                         Spacer()
-                        TextField("Placeholder", text: $goalName)
+                        TextField("Insert Goal's Name", text: $goalName)
                         
                     }
                     .multilineTextAlignment(.trailing)
@@ -42,7 +42,7 @@ struct SetAGoal: View {
                             .foregroundColor(Color.black)
                             .padding(.leading, 6.0)
                         Spacer()
-                        TextField("Placeholder", text: $goalDescription)
+                        TextField("Insert Description", text: $goalDescription)
                         
                     }
                     .multilineTextAlignment(.trailing)
