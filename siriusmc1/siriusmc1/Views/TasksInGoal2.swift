@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TasksInGoal2: View {
     @State var showModal: Bool = false
+    @State var checked = false
     
     var goal: String = ""
    
@@ -19,12 +20,18 @@ struct TasksInGoal2: View {
         
         NavigationStack{
             List{
-                ForEach(TaskListG2) { listvar in
+                ForEach(TaskListG1) { listvar in
+                 
+                    
+                   
                     
                     HStack{
-                        
-                        Text(listvar.taskName)
-                            .fontWeight(.bold)
+                            
+                            Toggle(isOn: $checked) {
+                                Text(listvar.taskName)
+                                    .fontWeight(.bold)
+                            }.toggleStyle(CheckboxStyle())
+                     
                         
                     }
                 }

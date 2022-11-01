@@ -25,11 +25,15 @@ struct Tasks: Identifiable {
 struct TaskView: View {
     
     @State private var calendar = Date()
+    @State var checked = false
 
     
     
     var tasks: [Tasks] = [
-        Tasks (name: "Task N°1"), Tasks (name: "Task N°2"), Tasks (name: "Task N°3")
+        Tasks (name: "Prepare the App Icon"),
+        Tasks (name: "Prepare the App Store Template"),
+        Tasks (name: "Make sure the app runs on IPhone"),
+        Tasks (name: "Make a video of the app")
     ]
     
     var body: some View {
@@ -49,15 +53,21 @@ struct TaskView: View {
                         List {
                             
                             DatePicker("Start Date", selection: $calendar, displayedComponents: [.date]).datePickerStyle(.graphical)
+                                //.background(Color.gray)
+                            
+                            
                             
                             ForEach(tasks) {
-                                task in Text(task.name) 
+                                task in
                                 
+                                Toggle(isOn: $checked) {
+                                Text("  "+task.name)
+                                }.toggleStyle(CheckboxStyle())
                                 
                             }
                             
                             
-                        }       
+                        }
 
                         
                     }

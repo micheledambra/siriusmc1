@@ -20,6 +20,8 @@ struct GoalView2: View {
         
         NavigationStack{
             
+            
+            
             VStack {
                 
                 Text("Goals")
@@ -54,9 +56,12 @@ struct GoalView2: View {
                     ZStack(alignment: .top) {
                         
                         RoundedRectangle(cornerRadius: 40)
-                            .foregroundColor(.yellow)
+                            .foregroundColor(Color("appYellow"))
+                            //.background{ Color(.teal)}
                             .frame(width: cardWidth, height: cardHeight)
                             .shadow(color: .gray, radius: 10, x:8, y:8)
+                        
+                            
                         
                         VStack(){
                             
@@ -65,19 +70,20 @@ struct GoalView2: View {
                             Text(GoalList[0].goalName)
                                 .font(.title)
                                 .fontWeight(.bold)
-                                .foregroundColor(.blue)
+                                .foregroundColor(Color("appBC"))
                             
                             Spacer()
                                 .frame(height: 25)
                             
                             Text(GoalList[0].goalDescription)
                                 .frame(width: 300, height: 85, alignment: .top)
+                                .foregroundColor(Color("appBC"))
                             
                         }
                         
                         NavigationLink(destination: TasksInGoal2(goal: GoalList[0].goalName)) {
                             RoundedRectangle(cornerRadius: 40)
-                                .foregroundColor(.teal)
+                                .foregroundColor(.white)
                                 .opacity(0)
                                 .frame(width: cardWidth, height: cardHeight)
                         }
@@ -93,7 +99,7 @@ struct GoalView2: View {
                     ZStack(alignment: .top) {
                         
                         RoundedRectangle(cornerRadius: 40)
-                            .foregroundColor(.orange)
+                            .foregroundColor(Color("appOrange"))
                             .frame(width: cardWidth, height: cardHeight)
                             .shadow(color: .gray, radius: 10, x:8, y:8)
                         
@@ -104,13 +110,14 @@ struct GoalView2: View {
                             Text(GoalList[1].goalName)
                                 .font(.title)
                                 .fontWeight(.bold)
-                                .foregroundColor(.blue)
+                                .foregroundColor(Color("appBC"))
                             
                             Spacer()
                                 .frame(height: 25)
                             
                             Text(GoalList[1].goalDescription)
                                 .frame(width: 300, height: 85, alignment: .top)
+                                .foregroundColor(Color("appBC"))
                             
                         }
                         
@@ -132,9 +139,10 @@ struct GoalView2: View {
                     ZStack(alignment: .top) {
                         
                         RoundedRectangle(cornerRadius: 40)
-                            .foregroundColor(.green)
+                            .foregroundColor(Color("appDarkOrange"))
                             .frame(width: cardWidth, height: cardHeight)
                             .shadow(color: .gray, radius: 10, x:8, y:8)
+                            
                         
                         VStack(){
                             
@@ -143,13 +151,14 @@ struct GoalView2: View {
                             Text(GoalList[2].goalName)
                                 .font(.title)
                                 .fontWeight(.bold)
-                                .foregroundColor(.blue)
+                                .foregroundColor(Color("appBC"))
                             
                             Spacer()
                                 .frame(height: 25)
                             
                             Text(GoalList[2].goalDescription)
                                 .frame(width: 300, height: 85, alignment: .top)
+                                .foregroundColor(Color("appBC"))
                             
                         }
                         
@@ -174,9 +183,11 @@ struct GoalView2: View {
             //title
                 
                 
-        }
+        }//navstack
+        
         
     }
+        
     
 }
 
