@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct siriusmc1App: App {
+struct Goalizer: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
